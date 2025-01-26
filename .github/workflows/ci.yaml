@@ -1,0 +1,32 @@
+name: Hello World Workflow
+
+# Trigger the workflow on push and allow manual dispatch
+on:
+  push:
+    branches:
+      - "*" # Runs on pushes to any branch
+  workflow_dispatch: # Allows manual execution of the workflow
+
+# Define the job(s) in the workflow
+jobs:
+  hello-world:
+    # Specify the runner (GitHub-hosted Ubuntu Linux)
+    runs-on: ubuntu-latest
+
+    # Steps to execute in the workflow
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python (if you're using Python for the Hello World script)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      # Step 3: Run the Hello World script
+      - name: Run Hello World
+        run: |
+          echo "Hello, World!"
+          python -c 'print("Hello, World from Python!")'
