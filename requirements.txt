@@ -1,0 +1,5 @@
+uv
+requests
+gradio
+pydub
+openai
