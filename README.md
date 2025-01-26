@@ -1,3 +1,15 @@
+---
+title: Test
+emoji: 🌍
+colorFrom: indigo
+colorTo: purple
+sdk: gradio
+sdk_version: 5.13.1
+app_file: app.pys
+pinned: false
+license: llama3.3
+---
+
 # OpenAI TTS Demo (Hypothetical Endpoint)
 
 This repository contains a simple Python/Gradio application that demonstrates how one **might** call a hypothetical OpenAI Text-to-Speech (TTS) endpoint (`tts-1` or `tts-1-hd`) using a Gradio interface. Please note that **at the time of writing, OpenAI does not provide an official TTS endpoint** in their public API. The code provided is for demonstration and might require a private or future OpenAI TTS feature to work.
